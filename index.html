@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/8c2156d585.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root" class="timer">
+      <h1 class="timer__title">Timer</h1>
+      <div class="timer_header">
+        <div class="timer__interface timer__interface--inputs">
+          <input
+            type="text"
+            class="time__input time__input--border"
+            id="hours"
+            value="00"
+          />
+          <input
+            type="text"
+            class="time__input time__input--border"
+            id="minutes"
+            value="00"
+          />
+          <input
+            type="text"
+            class="time__input time__input--border"
+            id="seconds"
+            value="00"
+          />
+        </div>
+        <div class="timer--subtext timer__interface">
+          <p>hours</p>
+          <p>minutes</p>
+          <p>seconds</p>
+        </div>
+        <div class="timer__interface timer__interface--buttons">
+          <button id="editTime">
+            <i class="fas fa-check"></i>
+          </button>
+          <button id="stopTime" disabled="true">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="restartTime"><i class="fas fa-redo"></i></button>
+        </div>
+        <div class="timer__interface timer__interface--alarm">
+          <button class="alarm--btn none" id="alarm--btn">
+            <i class="fas fa-stopwatch"></i>
+          </button>
+          <audio class="alarm" id="alarm" src="./alarm.wav"></audio>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

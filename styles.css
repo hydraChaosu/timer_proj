@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.timer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.timer__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.timer_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer__interface {
+  display: flex;
+  justify-content: center;
+}
+
+.timer--subtext>p {
+  width: 90px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.timer__interface button {
+  width: 90px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+#alarm--btn {
+  color: red;
+}
+
+.time__input {
+  max-width: 100px;
+  flex-basis: 25%;
+  font-size: 4rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: white 2px solid;
+}
+
+.time__input:disabled {
+  border: none;
+}
+
+#stopTime:disabled {
+  opacity: .5;
+}
+
+.none {
+  display: none;
+}
