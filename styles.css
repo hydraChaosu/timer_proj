@@ -74,7 +74,7 @@ body {
 }
 
 .time__input:disabled {
-  border: none;
+  border: black 2px solid;
 }
 
 #stopTime:disabled {
